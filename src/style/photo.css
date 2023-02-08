@@ -1,0 +1,98 @@
+.circle-border{
+    border: 2px solid #FD6D4C;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-background{
+    display: flex;
+    height: 270px;
+    width: 270px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, rgba(161,20,119,1) 0%, rgba(255,111,75,1) 100%);
+    z-index: -1;
+}
+.circle-background img{
+margin-top: -20px;
+margin-left: -20px;
+}
+.big-circle{
+    margin: auto;
+    height: 210px;
+    width: 210px;
+    display: flex;
+    justify-content: flex-start;
+    animation-name: circle-rotate;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    border-radius: 50%;
+    animation-timing-function : linear;
+}
+
+.circle-one{
+    animation-name: expanding;
+    animation-duration: 1s;
+    height: 15px;
+    width: 15px;
+    background-color: #FD6D4C;
+    border-radius: 50%;
+}
+
+.down-circle{
+    margin-top: -50px;
+    z-index: 100;
+}
+
+@keyframes expanding{
+    0%{transform:scale(0%);}
+    100%{transform:scale(100%);}
+}
+@keyframes circle-rotate{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+
+
+/* LINKS */
+
+.cont-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 60px;
+    border: 1px solid grey;
+    background-color: white;
+}
+.links{
+    width: 250px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 2px solid #FD6D4C;
+    background-color: transparent;
+    align-items: center;
+}
+
+.links a img{
+    width: 50px;
+    border-radius: 50%;
+    padding: 3px;
+}
+.links img:hover{
+    transition: 2s;
+    animation-name: linksanim ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes linksanim {
+    0%{scale: 100%;}
+    40%{scale: 75%;}
+    60%{scale: 125%;}
+    100%{scale: 100%;}
+}

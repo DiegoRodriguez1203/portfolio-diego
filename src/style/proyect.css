@@ -1,0 +1,106 @@
+.proyect{
+    margin: 0 auto;
+    height: 300px;
+    width: 700px;
+    border:2px solid #A11477;
+    display: flex;
+}
+.proyect-img{
+    width: 300px;
+    height: 270px;
+    padding: 5px;
+    border: 2px solid #A11477;
+    margin-top: -20px;
+    margin-left: 10px;
+    transition: 1s;
+}
+.proyect-img img{
+width: 300px;
+}
+.proyect-text h1{
+    color: #FD6D4C;
+    font-size: 30px;
+    font-weight: 900;
+
+}
+.xd{
+    transition: 2s;
+    animation-name: anim ;
+    animation-duration: 1s;
+}
+.xdd{
+    transition: 2s;
+    animation-name: anim2 ;
+    animation-duration: 1s;
+}
+.proyect-text p{
+    margin-top: -8px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 19px;
+}
+
+.proyect-text{
+    margin-left: 25px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.proyect-logos{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    margin-top: 5px;
+    margin-right: 20px;
+
+}
+.proyect-logos img{
+    width: 50px;
+    margin-top: -8px;
+    margin-left: 5px;
+    
+}
+.proyect-logos a img:hover{
+    transition: 2s;
+    animation-name: linksanim ;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes linksanim {
+    0%{scale: 100%;}
+    40%{scale: 75%;}
+    60%{scale: 125%;}
+    100%{scale: 100%;}
+}
+@keyframes anim {
+    0%{scale: 100%;}
+    40%{scale: 75%;}
+    60%{scale: 125%;}
+    100%{scale: 100%;}
+}
+@keyframes anim2 {
+    0%{scale: 100%;}
+    40%{scale: 75%;}
+    60%{scale: 125%;}
+    100%{scale: 100%;}
+}
+
+.proyect-img:hover{
+    transform: scale(108%);
+    transition: 1s;
+    }
+.blackscreen{
+    width: 300px;
+    height: 270px;
+background-color: transparent;
+position: absolute;
+margin-top: -270px;
+transition: 1s;
+
+}
+
+.blackscreen:hover{
+    background-color:rgba(161, 20, 119, 0.4);
+    transition: 1s;
+}
