@@ -5,13 +5,13 @@ import { usePro } from '../context/reactcontext'
 import { useSetPro } from '../context/reactcontext'
 import React, { Component } from 'react';
 
-export const Proyect = ({title, desc, img }) => {
+export const Proyect = ({title, desc, img, git, rock }) => {
     const pro =usePro()
     const setPro = useSetPro()
     return(
         <div className="proyect">
             <button className='button-left' onClick={()=>{setPro(0)}}></button>
-            <a href="">
+            <a href={rock} target="_blank">
                 <div className='proyect-img'>
                 <img src={img} alt="" />
                 <div className='blackscreen'></div>
@@ -22,8 +22,8 @@ export const Proyect = ({title, desc, img }) => {
             <p>{desc}</p>
             <div className="proyect-logos">
 
-                <a href=""><img src={github} alt="" /></a>
-                <a href=""><img src={rocket} alt="" /></a>
+                <a href={git} target="_blank"><img src={github} alt="" /></a>
+                <a href={rock} target="_blank"><img src={rocket} alt="" /></a>
             </div>
             </div>
             <button className='button-right' onClick={()=>{setPro(1)}}></button>

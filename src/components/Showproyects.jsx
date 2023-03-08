@@ -21,7 +21,7 @@ export const Showproyects = ()=>{
     return(
         
         <section>
-            <Proyect title={proyects[pro].title} desc={proyects[pro].desc} img = {rsc( proyects[pro].img)}/>
+            <Proyect title={proyects[pro].title} desc={proyects[pro].desc} img={rsc( proyects[pro].img)} git={proyects[pro].github} rock={proyects[pro].rocket}/>
         </section>
     )
 }

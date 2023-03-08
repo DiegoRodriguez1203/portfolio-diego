@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react'; 
+import { useState, useEffect } from 'react'; 
 import { Routes, Route } from 'react-router-dom';
 import { Start } from './components/Start'
 import {Navbar} from './components/Navbar'
@@ -10,10 +10,10 @@ import { useStartContext } from './context/reactcontext';
 import { Referencespage } from './pages/Referencespage';
 
 
+
 function App() {
   const startContext = useStartContext()
   const [hidden, setHidden] = useState(false)
-  
 
   return (
     
